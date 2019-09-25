@@ -236,7 +236,7 @@ Pointer<T, size> &Pointer<T, size>::operator=(Pointer &rv){
     this->addr = rv.addr;
     collect();
     
-    return &this;
+    return &this;   
 
 }
 

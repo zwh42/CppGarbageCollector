@@ -31,7 +31,7 @@ array, then arraySize contains its size */
         }
         arraySize = size;
         
-    }
+    } 
 };
 // Overloading operator== allows two class objects to be compared.
 // This is needed by the STL list class.
