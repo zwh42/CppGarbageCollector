@@ -24,7 +24,7 @@ array, then arraySize contains its size */
         refcount = 1;
         memPtr = memPtr_;
         
-        if(size != 0){
+        if(size > 0){
         	isArray = true;
         } else {
         	isArray = false;
@@ -40,5 +40,5 @@ bool operator==(const PtrDetails<T> &ob1,
                 const PtrDetails<T> &ob2)
 {
     // TODO: Implement operator==
-  	return ob1.memPtr == ob2.memPtr;
+  	return (ob1.memPtr == ob2.memPtr) && (ob1.arraySize == ob2.arraySize);
 }
